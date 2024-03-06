@@ -66,11 +66,11 @@ def create_weather_df(df):
 
 
 # Load Cleaned Data
-df = pd.read_csv('PRSA_Data_20130301-20170228.csv')
+df = pd.read_csv('dashboard/PRSA_Data_20130301-20170228.csv')
 
 with st.sidebar:
     # Menambahkan logo
-    st.image('logo.png', width=50)
+    st.image('dashboard/logo.png', width=50)
     
     years = [int(year) for year in df['year'].unique()]
 
